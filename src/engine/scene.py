@@ -8,7 +8,12 @@ class Scene:
 
         self.filehandler = filehandler
 
+        self.world = World(filehandler)
+
     def render(self):
         self.win.fill((10, 40, 70))
 
-    def update(self, dt):...
+        self.world.render()
+
+    def update(self, dt):
+        self.world.update(dt)
