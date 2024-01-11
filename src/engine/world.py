@@ -6,7 +6,10 @@ class World:
 
         self.file_handler = filehandler
 
+
     def render(self):...
 
     def update(self, dt):
         self.file_handler.data = self.file_handler.data
+
+
